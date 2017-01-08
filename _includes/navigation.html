@@ -1,2 +1,8 @@
-<nav class="site-nav">
-</nav>
+<ul class="menu">
+{% assign permalink = page.permalink %}
+{% for page in site.pages | sort: 'title' %}
+    {% if page.title %}
+    <li class="{%if permalink == page.permalink %}active{% endif %}"><a href="{{page.permalink}}">{% if page.link_title %}{{ page.link_title }}{% else %}{{ page.title }}{% endif %}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>

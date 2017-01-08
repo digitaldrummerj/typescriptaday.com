@@ -2,7 +2,16 @@
 
     <div class="wrapper">
 
-        <a class="site-title" href="/">{{ site.title }}</a> {% include navigation.html %}
+        <div class="top-bar">
+            <div class="top-bar-title">
+                <a class="site-title" href="/"><strong>{{ site.title }}</strong></a>
+            </div>
+            <div id="responsive-menu">
+                <div class="top-bar-right">
+                    {% include navigation.html %}
+                </div>
+            </div>
+        </div>
 
     </div>
 
