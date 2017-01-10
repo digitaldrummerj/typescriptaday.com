@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TypeScript Weekly
-link_title: Weekly
+nav_title: Weekly
 permalink: /weekly/
 ---
 

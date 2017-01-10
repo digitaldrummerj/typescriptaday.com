@@ -2,3 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 .DS_Store
+.vscode
+node_modules
+_scripts/*.bundle.js

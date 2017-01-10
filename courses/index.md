@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Courses
+nav_title: Courses
 permalink: /courses/
 ---
 
