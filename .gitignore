@@ -4,4 +4,4 @@ _site
 .DS_Store
 .vscode
 node_modules
-_scripts/*.bundle.js
+assets/*.bundle.js

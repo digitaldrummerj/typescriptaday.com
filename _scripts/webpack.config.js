@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 
 const configuration = {
     context: __dirname,
@@ -8,7 +9,7 @@ const configuration = {
         vendor: './vendor.ts'
     },
     output: {
-        path: __dirname,
+        path: path.join(__dirname, '..', 'assets'),
         filename: 'scripts.bundle.js',
         sourceMapFilename: '[name].js.map',
         chunkFilename: '[id].chunk.js'
