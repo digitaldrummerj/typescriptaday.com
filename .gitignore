@@ -7,3 +7,4 @@ node_modules
 assets/*.bundle.js
 id_rsa
 id_rsa.pub
+Gemfile.lock
