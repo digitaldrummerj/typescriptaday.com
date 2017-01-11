@@ -27,7 +27,12 @@ github_username:  typescriptaday
 markdown: kramdown
 theme: minima
 exclude:
+  - .sass-cache
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - .travis.yml
+  - deploy.sh
+  - node_modules
 sass:
   sass_dir: _scss
