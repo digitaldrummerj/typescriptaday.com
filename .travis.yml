@@ -21,6 +21,9 @@ before_install:
 global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
+before_script:
+    - bundle install
+    
 script:
   - chmod +x deploy.sh
   - bash ./deploy.sh 
