@@ -26,6 +26,8 @@ rm -rf $TARGET_DIR/**/* || exit 0
 
 # Run our compile script
 npm run build
+
+# _config-dj.yml is to make everything work correctly as a folder under my CNAME.  Remove if running on typescriptaday.com
 JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config-dj.yml
 
 # Now let's go have some fun with the cloned repo

@@ -34,5 +34,10 @@ exclude:
   - .travis.yml
   - deploy.sh
   - node_modules
+  - id_rsa.enc
+  - .gitignore
+  - yarn.lock
+  - package.json
+  
 sass:
   sass_dir: _scss
