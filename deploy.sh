@@ -33,7 +33,7 @@ JEKYLL_ENV=production bundle exec jekyll build -- config _config.yml,_config-dj.
 cd $TARGET_DIR
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add .
+git add . --all
 git commit -m "Deploy to GitHub Pages: ${SHA}. Travis build: $TRAVIS_BUILD_NUMBER"
 
 
