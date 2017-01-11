@@ -2,28 +2,29 @@ language: ruby
 sudo: false
 rvm:
   - 2.3.0
+nvm:
+    - "6"
 
-node_js:
-  - "6"
 sudo: false
 cache:
   - node_modules
   - bundler
   
 before_install:
+    - nvm install --lts
   - openssl aes-256-cbc -K $encrypted_4a5f4ffc7c9a_key -iv $encrypted_4a5f4ffc7c9a_iv -in id_rsa.enc -out id_rsa -d
   - mv id_rsa ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
   - eval `ssh-agent -s`
   - ssh-add ~/.ssh/id_rsa
-  - npm install -g webpack
 
 global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 before_script:
+    - npm install -g webpack
     - npm install
-    
+
 script:
   - chmod +x deploy.sh
   - bash ./deploy.sh 
