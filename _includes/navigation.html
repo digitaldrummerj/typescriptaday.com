@@ -2,7 +2,7 @@
 {% assign permalink = page.permalink %}
 {% for page in site.pages | sort: 'title' %}
     {% if page.nav_title %}
-    <li class="{%if permalink == page.permalink %}active{% endif %}"><a href="{{page.permalink | prepend: absolute_url }}">{{ page.nav_title }}</a></li>
+    <li class="{%if permalink == page.permalink %}active{% endif %}"><a href="{{page.permalink | absolute_url  }}">{{ page.nav_title }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
